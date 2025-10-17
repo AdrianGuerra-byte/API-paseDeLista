@@ -1,0 +1,21 @@
+{
+  "name": "pase-lista-torneo",
+  "version": "1.0.0",
+  "description": "API para pase de lista de torneo CUH",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "init-db": "node src/scripts/initDb.js"
+  },
+  "keywords": ["express", "turso", "sqlite", "api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "express": "^4.21.1",
+    "dotenv": "^16.4.7",
+    "cors": "^2.8.5"
+  }
+}

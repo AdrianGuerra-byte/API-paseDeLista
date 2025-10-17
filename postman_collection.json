@@ -1,0 +1,228 @@
+{
+  "info": {
+    "name": "API Pase Lista Torneo CUH",
+    "description": "API para gestionar pase de lista del torneo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Asistencia",
+      "item": [
+        {
+          "name": "Marcar Asistencia",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/asistencia/marcar/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "asistencia", "marcar", "1"]
+            }
+          }
+        },
+        {
+          "name": "Quitar Asistencia",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/asistencia/quitar/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "asistencia", "quitar", "1"]
+            }
+          }
+        },
+        {
+          "name": "Promover a Participantes",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/asistencia/promover/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "asistencia", "promover", "1"]
+            }
+          }
+        },
+        {
+          "name": "Relegar a Lista Espera",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/asistencia/relegar/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "asistencia", "relegar", "1"]
+            }
+          }
+        },
+        {
+          "name": "Estadísticas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/asistencia/estadisticas",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "asistencia", "estadisticas"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Participantes",
+      "item": [
+        {
+          "name": "Listar Participantes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/participantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "participantes"]
+            }
+          }
+        },
+        {
+          "name": "Crear Participante",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan Pérez García\",\n  \"institucion\": \"PrepaCUH\",\n  \"grupo\": \"3A\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/participantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "participantes"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Participante",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan Pérez García\",\n  \"institucion\": \"CUH\",\n  \"grupo\": \"24A\",\n  \"asistio\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/participantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "participantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Parcial (PATCH)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"asistio\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/participantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "participantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Eliminar Participante",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/participantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "participantes", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lista de Espera",
+      "item": [
+        {
+          "name": "Listar Lista Espera",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/lista-espera",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "lista-espera"]
+            }
+          }
+        },
+        {
+          "name": "Crear en Lista Espera",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"María González\",\n  \"institucion\": \"PrepaCUH\",\n  \"grupo\": \"2B\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/lista-espera",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "lista-espera"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
