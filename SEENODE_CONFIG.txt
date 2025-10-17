@@ -1,0 +1,88 @@
+# ⚡ CONFIGURACIÓN SEENODE - COPIA Y PEGA
+
+## 📋 Configuración del Formulario
+
+### Campos Principales
+```
+Branch:       main
+Git commit:   latest (o déjalo vacío)
+Image:        Node.js 18+ o 20+
+```
+
+### Build and Deploy Settings
+
+**Build command:**
+```
+pnpm install
+```
+
+**Start command:**
+```
+pnpm start
+```
+
+**Root directory:**
+```
+/
+```
+
+**Port:**
+```
+3000
+```
+
+---
+
+## 🔐 Variables de Entorno (copiar cada línea)
+
+```
+TURSO_DATABASE_URL=libsql://bsddd-guerra-666.aws-us-east-1.turso.io
+```
+
+```
+TURSO_AUTH_TOKEN=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3NjA3MjI0MjMsImlkIjoiZGY4NjkyMmMtMGFjYy00ZTU4LWI1MmEtODJiN2JiNGU1YmRlIiwicmlkIjoiNTAzYmIyYmYtZWZiYS00ZTQzLWI1YTAtYjA0YjQzNjU2MDRkIn0.GZQGmhHGinWJM6C3_4dSDbmkv9MhK9NexoC1LGL0jDy79_dv9zuYO2p5i563kmArGsfWPO4nnUz-_W1fsoqVBQ
+```
+
+```
+PORT=3000
+```
+
+---
+
+## ✅ Checklist
+
+- [ ] Branch: `main`
+- [ ] Build: `pnpm install` (sin build)
+- [ ] Start: `pnpm start` (sin -p 80)
+- [ ] Port: `3000`
+- [ ] 3 variables de entorno agregadas
+- [ ] Click en "Continue"
+
+---
+
+## 🚀 Antes de Deploy
+
+```bash
+git add .
+git commit -m "feat: configurar para deploy en Seenode"
+git push origin main
+```
+
+---
+
+## 🧪 Probar Después
+
+```bash
+curl https://tu-app-url.seenode.app/
+curl https://tu-app-url.seenode.app/api/participantes
+curl https://tu-app-url.seenode.app/api/asistencia/estadisticas
+```
+
+---
+
+## ⚠️ IMPORTANTE
+
+- ✅ NO agregues `&& pnpm run build` en Build command
+- ✅ NO agregues `-- -p 80` en Start command
+- ✅ SÍ agrega las 3 variables de entorno
+- ✅ SÍ usa puerto 3000
