@@ -35,8 +35,9 @@ app.use('/api/asistencia', asistenciaRoutes);
 async function start() {
   try {
     await initDatabase();
-    app.listen(PORT, () => {
-      console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
+      console.log(`🌍 Accesible en todas las interfaces de red`);
     });
   } catch (error) {
     console.error('Error al iniciar el servidor:', error);

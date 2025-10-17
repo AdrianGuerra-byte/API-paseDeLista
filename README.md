@@ -27,6 +27,16 @@ pnpm install
    - Para desarrollo local: `TURSO_DATABASE_URL=file:local.db`
    - Para producción: Agrega tu URL y token de Turso
 
+## 🚀 Deploy en Seenode
+
+**📄 [Ver guía completa de deploy](DEPLOY_SEENODE.md)**
+
+Configuración rápida:
+- **Build:** `pnpm install`
+- **Start:** `pnpm start`
+- **Port:** `3000`
+- **Env vars:** `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`, `PORT`
+
 ## 🎯 Uso
 
 ```bash
