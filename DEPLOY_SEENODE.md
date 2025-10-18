@@ -23,19 +23,17 @@ Node.js 18+ o 20+
 
 ---
 
-### 🔨 **Build and Deploy Settings**
+### Build and Deploy Settings
 
-#### **Build command**
+**Build command:**
 ```bash
-pnpm install
+npm install
 ```
-⚠️ **NO pongas** `&& pnpm run build` porque este proyecto no tiene build
 
-#### **Start command**
+**Start command:**
 ```bash
-pnpm start
+npm start
 ```
-⚠️ **NO pongas** `-- -p 80` ni nada extra, solo `pnpm start`
 
 #### **Root directory**
 ```

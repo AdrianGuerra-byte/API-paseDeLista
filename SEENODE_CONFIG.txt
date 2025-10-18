@@ -13,12 +13,12 @@ Image:        Node.js 18+ o 20+
 
 **Build command:**
 ```
-pnpm install
+npm install
 ```
 
 **Start command:**
 ```
-pnpm start
+npm start
 ```
 
 **Root directory:**
@@ -52,8 +52,8 @@ PORT=3000
 ## ✅ Checklist
 
 - [ ] Branch: `main`
-- [ ] Build: `pnpm install` (sin build)
-- [ ] Start: `pnpm start` (sin -p 80)
+- [ ] Build: `npm install` (sin build)
+- [ ] Start: `npm start` (sin -p 80)
 - [ ] Port: `3000`
 - [ ] 3 variables de entorno agregadas
 - [ ] Click en "Continue"
@@ -82,7 +82,8 @@ curl https://tu-app-url.seenode.app/api/asistencia/estadisticas
 
 ## ⚠️ IMPORTANTE
 
-- ✅ NO agregues `&& pnpm run build` en Build command
+- ✅ NO agregues `&& npm run build` en Build command
 - ✅ NO agregues `-- -p 80` en Start command
 - ✅ SÍ agrega las 3 variables de entorno
 - ✅ SÍ usa puerto 3000
+- ✅ USA npm (NO pnpm) - Seenode no tiene pnpm preinstalado
